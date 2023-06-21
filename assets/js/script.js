@@ -1,1 +1,1 @@
-console.log('Javascript working!');
+console.log('STOP MESSING WITH HTML AND CSS, WRITE ME!!');

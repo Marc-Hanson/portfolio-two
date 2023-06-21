@@ -1,11 +1,72 @@
-/* @import fonts */
+@import url('https://fonts.googleapis.com/css2?family=Yomogi&display=swap');
 
 * {
     margin: 0;
     padding: 0;
     border: none;
+    font-family: 'Yomogi', cursive;
 }
 
 body {
-    background-color: blue;
+    background-color: #F5F7B2;
+    color: #890596;
+    text-align: center;
+}
+
+.content-wrapper {
+    margin: 0 auto;
+    width: 60%;
+}
+
+.game-area {
+    border: 15px solid #1CC5DC;
+    margin: 3%;
+    font-size: 2rem;
+}
+
+h1 {
+    font-size: 2.5vmax;
+}
+
+.button-container {
+    margin: 2% 0;
+}
+
+.element-choice {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 10%;
+    border: 5px solid #CF0000;
+    margin: 1%;
+    font-size: 6rem;
+}
+
+.score-area {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    padding: 3%;
+}
+
+.your-area {
+    grid-area: 1 / 1 / 2 / 1;
+}
+
+.jerry-area {
+    grid-area: 1 / 2 / 2 / 2;
+}
+
+#your-choice,
+#jerry-choice {
+    background-color: #FFF;
+    border: 5px solid #CF0000;
+    margin: 5% auto;
+    height: 10rem;
+    width: 10rem;
+    border-radius: 10%;
+    font-size: 6rem;
+}
+
+footer {
+    font-size: 2rem;
 }
