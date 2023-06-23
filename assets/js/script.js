@@ -61,9 +61,9 @@ async function youWin() {
     document.getElementById('your-choice').innerHTML = "👍";
     document.getElementById('jerry-choice').innerHTML = "👎";
     if (document.getElementById('your-score').textContent == 9) {
+        removeListeners();
         document.getElementById('theWinner').innerHTML = 'You win';
         document.getElementById('game-over').style.display = 'block';
-        removeListeners();
     } else {
         document.getElementById('your-score').innerHTML++;
     }
@@ -76,9 +76,9 @@ async function youLose() {
     document.getElementById('your-choice').innerHTML = "👎";
     document.getElementById('jerry-choice').innerHTML = "👍";
     if (document.getElementById('jerry-score').textContent == 9) {
+        removeListeners();
         document.getElementById('theWinner').innerHTML = 'Jerry wins';
         document.getElementById('game-over').style.display = 'block';
-        removeListeners();
     } else {
         document.getElementById('jerry-score').innerHTML++;
     }
