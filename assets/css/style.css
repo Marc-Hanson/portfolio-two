@@ -46,7 +46,7 @@ h1 {
 }
 
 #game-over {
-    display: block;
+    display: none;
     margin: 0;
     position: absolute;
     top: 50%;
