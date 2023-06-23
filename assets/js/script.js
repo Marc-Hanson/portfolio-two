@@ -66,9 +66,9 @@ async function youWin() {
         document.getElementById('game-over').style.display = 'block';
     } else {
         document.getElementById('your-score').innerHTML++;
+        addListeners();
     }
     await new Promise(resolve => setTimeout(resolve, 400));
-    addListeners();
 }
 
 async function youLose() {
@@ -81,9 +81,9 @@ async function youLose() {
         document.getElementById('game-over').style.display = 'block';
     } else {
         document.getElementById('jerry-score').innerHTML++;
+        addListeners();
     }
     await new Promise(resolve => setTimeout(resolve, 400));
-    addListeners();
 }
 
 //Sets cooldown on buttons to stop user clicking too often.
