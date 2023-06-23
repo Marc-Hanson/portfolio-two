@@ -100,6 +100,10 @@ footer {
         width: 100%;
     }
 
+    .element-choice {
+        font-size: 4vmax;
+    }
+
     #game-over {
         width: 100%;
         top: 200px;
