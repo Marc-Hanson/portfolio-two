@@ -13,7 +13,8 @@ body {
     text-align: center;
 }
 
-.content-wrapper {
+#content-wrapper {
+    display: none;
     margin: 0 auto;
     width: 60%;
 }
@@ -21,6 +22,27 @@ body {
 /* Header area*/
 h1 {
     font-size: 2.5vmax;
+}
+
+/* Start screen */
+#game-start {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    z-index: -5;
+    background-color: #F5F7B2;
+}
+
+.game-mode {
+    width: 8vmax;
+    height: 8vmax;
+    border-radius: 10%;
+    border: 5px solid #CF0000;
+    margin: 1%;
+    font-size: 5vmax;
 }
 
 /* Game area and buttons */
@@ -101,6 +123,11 @@ footer {
     }
 
     .element-choice {
+        font-size: 4vmax;
+    }
+
+    #your-choice,
+    #jerry-choice {
         font-size: 4vmax;
     }
 

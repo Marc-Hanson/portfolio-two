@@ -1,8 +1,24 @@
-// Array for element names and default innerHTML.
+// Array for element names.
 const options = ["fire", "grass", "rock", "ice", "ground"];
 
-//Adds Event Listeners to the 5 buttons to allow the player to take first turn.
-document.addEventListener("DOMContentLoaded", addListeners());
+// Game mode.
+function threeElements() {
+    document.getElementById('game-start').style.display = 'none';
+    document.getElementById('content-wrapper').style.display = 'block';
+    document.getElementById('fire').style.display = 'none';
+    document.getElementById('ground').style.display = 'none';
+    options.splice(4, 4);
+    options.splice(0, 1);
+    document.getElementById('instructions').innerHTML = `🌿 covers 🪨,
+            🪨 smashes ❄️, and ❄️ freezes 🌿.`;
+    addListeners();
+}
+
+function fiveElements() {
+    document.getElementById('game-start').style.display = 'none';
+    document.getElementById('content-wrapper').style.display = 'block';
+    addListeners();
+}
 
 //Updates player choice and runs computers turn.
 async function yourTurn() {
@@ -30,16 +46,16 @@ async function resultsCheck() {
     if (yourMove == jerryMove) {
         aDraw();
     } else if (
-        (yourMove == "🔥" && jerryMove == "🌱") ||
+        (yourMove == "🔥" && jerryMove == "🌿") ||
         (yourMove == "🔥" && jerryMove == "❄️") ||
-        (yourMove == "🌱" && jerryMove == "🪨") ||
-        (yourMove == "🌱" && jerryMove == "🌰") ||
+        (yourMove == "🌿" && jerryMove == "🪨") ||
+        (yourMove == "🌿" && jerryMove == "🍄") ||
         (yourMove == "🪨" && jerryMove == "❄️") ||
         (yourMove == "🪨" && jerryMove == "🔥") ||
-        (yourMove == "❄️" && jerryMove == "🌰") ||
-        (yourMove == "❄️" && jerryMove == "🌱") ||
-        (yourMove == "🌰" && jerryMove == "🔥") ||
-        (yourMove == "🌰" && jerryMove == "🪨")
+        (yourMove == "❄️" && jerryMove == "🍄") ||
+        (yourMove == "❄️" && jerryMove == "🌿") ||
+        (yourMove == "🍄" && jerryMove == "🔥") ||
+        (yourMove == "🍄" && jerryMove == "🪨")
     ) {
         youWin();
     } else {
@@ -60,7 +76,7 @@ async function youWin() {
     await new Promise(resolve => setTimeout(resolve, 400));
     document.getElementById('your-choice').innerHTML = "👍";
     document.getElementById('jerry-choice').innerHTML = "👎";
-    if (document.getElementById('your-score').textContent == 9) {
+    if (document.getElementById('your-score').textContent == 4) {
         removeListeners();
         document.getElementById('theWinner').innerHTML = 'You win';
         document.getElementById('game-over').style.display = 'block';
@@ -75,7 +91,7 @@ async function youLose() {
     await new Promise(resolve => setTimeout(resolve, 400));
     document.getElementById('your-choice').innerHTML = "👎";
     document.getElementById('jerry-choice').innerHTML = "👍";
-    if (document.getElementById('jerry-score').textContent == 9) {
+    if (document.getElementById('jerry-score').textContent == 4) {
         removeListeners();
         document.getElementById('theWinner').innerHTML = 'Jerry wins';
         document.getElementById('game-over').style.display = 'block';

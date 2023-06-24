@@ -13,24 +13,31 @@
 </head>
 
 <body>
-    <div class="content-wrapper">
+    <div id="game-start">
+        <h1>Welcome to Mini Battle Monsters!</h1>
+        <h2>Choose how many elements to play with:</h2>
+        <button class="game-mode" onclick="threeElements()">3️</button>
+        <button class="game-mode" onclick="fiveElements()">5️</button>
+    </div>
+    <div id="content-wrapper">
         <!-- Header containing h1 title. -->
         <header>
             <h1>'Legally-safe' Miniature Battle Monsters</h1>
         </header>
+        <!-- Cover div to allow easy or hard mode game. -->
         <!-- Div with a blue border for game area. -->
         <div class="game-area">
             <!-- 5 buttons with emoji images. -->
             <div class="button-container">
                 <button class="element-choice" id="fire">🔥</button>
-                <button class="element-choice" id="grass">🌱</button>
+                <button class="element-choice" id="grass">🌿</button>
                 <button class="element-choice" id="rock">🪨</button>
                 <button class="element-choice" id="ice">❄️</button>
-                <button class="element-choice" id="ground">🌰</button>
+                <button class="element-choice" id="ground">🍄</button>
             </div>
             <!-- Game over screen with display:none; -->
             <div id="game-over">
-                <h2><span id="theWinner">#</span> with 10 points!</h2>
+                <h2><span id="theWinner">#</span> with 5 points!</h2>
                 <h3>Hit refresh to play again.</h3>
             </div>
             <!--Score area with 2 boxes showing players choice and score. -->
@@ -47,15 +54,16 @@
                 </div>
             </div>
         </div>
+        <!-- Footer with game instructions. -->
+        <footer>
+            <h3>INSTRUCTIONS:</h3>
+            <p id="instructions">It's easy! 🔥 burns 🌿 and ❄️. Then </span>🌿 covers 🪨 and 🍄.<br>
+                🪨 smashes ❄️ and 🔥, ❄️ freezes 🍄 and 🌿.<br>
+                And lastly, 🍄 smothers 🔥 and 🪨.
+            </p>
+        </footer>
     </div>
-    <!-- Footer with game instructions. -->
-    <footer>
-        <h3>INSTRUCTIONS:</h3>
-        <p>It's easy! 🔥 burns 🌱 and ❄️. Then 🌱 covers 🪨 and 🌰.<br>
-            🪨 smashes ❄️ and 🔥, ❄️ freezes 🌰 and 🌱.<br>
-            And lastly, 🌰 smothers 🔥 and 🪨.
-        </p>
-    </footer>
+
     <!-- Link to Javascript file. -->
     <script src="assets/js/script.js"></script>
 </body>
