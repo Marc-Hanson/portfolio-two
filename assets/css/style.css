@@ -115,11 +115,19 @@ footer {
 @media screen and (max-width: 1200px) {
 
     body {
-        padding: 5%;
+        padding: 5% 0;
     }
 
     .content-wrapper {
         width: 100%;
+    }
+
+    .game-area {
+        margin: 3% 0;
+    }
+
+    .game-mode {
+        font-size: 4vmax;
     }
 
     .element-choice {

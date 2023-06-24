@@ -1,7 +1,7 @@
 // Array for element names.
 const options = ["fire", "grass", "rock", "ice", "ground"];
 
-// Game mode.
+// Game modes.
 function threeElements() {
     document.getElementById('game-start').style.display = 'none';
     document.getElementById('content-wrapper').style.display = 'block';
