@@ -104,7 +104,7 @@ async function youLose() {
 
 //Sets cooldown on buttons to stop user clicking too often.
 function removeListeners() {
-    let buttons = document.getElementsByTagName("button");
+    let buttons = document.getElementsByClassName("element-choice");
 
     for (let button of buttons) {
         button.removeEventListener("click", yourTurn);
@@ -112,7 +112,7 @@ function removeListeners() {
 }
 
 function addListeners() {
-    let buttons = document.getElementsByTagName("button");
+    let buttons = document.getElementsByClassName("element-choice");
 
     for (let button of buttons) {
         button.addEventListener("click", yourTurn);

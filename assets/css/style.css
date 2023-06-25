@@ -4,7 +4,7 @@
     margin: 0;
     padding: 0;
     border: none;
-    font-family: cursive;
+    font-family: 'Roboto', sans-serif;
 }
 
 body {
@@ -30,7 +30,6 @@ h1 {
     position: absolute;
     top: 50%;
     left: 50%;
-    -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     z-index: -5;
     background-color: #F5F7B2;
@@ -72,7 +71,6 @@ h1 {
     position: absolute;
     top: 50%;
     left: 50%;
-    -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     background-color: #F5F7B2;
     width: 60%;
@@ -114,15 +112,17 @@ footer {
 }
 
 /* Media breakpoints and styling */
+
 /* Tablets - medium size */
-@media screen and (max-width: 1024) {
+
+@media screen and (max-width: 1024px) {
 
     .content-wrapper {
-        width: 80%;
+        width: 100%;
     }
 
     .game-area {
-        width: 80%;
+        width: 100%;
         margin: 3% 0;
     }
 
@@ -151,20 +151,15 @@ footer {
 }
 
 /* Mobiles and small devices */
+
 @media screen and (max-width: 768px) {
 
     body {
         padding: 0;
     }
 
-    .content-wrapper {
-        width: 100%;
-    }
-
     .game-area {
         font-size: 3vmax;
-        width: 100%;
-        margin: 0;
     }
 
     .game-mode {
