@@ -114,7 +114,8 @@ footer {
 }
 
 /* Media breakpoints and styling */
-@media screen and (max-width: 1200px) {
+/* Tablets - medium size */
+@media screen and (max-width: 1024) {
 
     .content-wrapper {
         width: 80%;
@@ -130,11 +131,15 @@ footer {
     }
 
     .element-choice {
+        width: 7vmax;
+        height: 7vmax;
         font-size: 4vmax;
     }
 
     #your-choice,
     #jerry-choice {
+        width: 7vmax;
+        height: 7vmax;
         font-size: 4vmax;
     }
 
@@ -145,7 +150,8 @@ footer {
 
 }
 
-@media screen and (max-width: 900px) {
+/* Mobiles and small devices */
+@media screen and (max-width: 768px) {
 
     body {
         padding: 0;
@@ -162,17 +168,19 @@ footer {
     }
 
     .game-mode {
-        text-align: center;
         font-size: 3vmax;
     }
 
     .element-choice {
-        text-align: center;
+        width: 6vmax;
+        height: 6vmax;
         font-size: 3vmax;
     }
 
     #your-choice,
     #jerry-choice {
+        width: 6vmax;
+        height: 6vmax;
         font-size: 3vmax;
     }
 
