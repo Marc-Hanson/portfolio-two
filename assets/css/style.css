@@ -89,10 +89,12 @@ h1 {
 
 .your-area {
     grid-area: 1 / 1 / 2 / 1;
+    font-size: 2vmax;
 }
 
 .jerry-area {
     grid-area: 1 / 2 / 2 / 2;
+    font-size: 2vmax;
 }
 
 #your-choice,
@@ -114,15 +116,12 @@ footer {
 /* Media breakpoints and styling */
 @media screen and (max-width: 1200px) {
 
-    body {
-        padding: 5% 0;
-    }
-
     .content-wrapper {
-        width: 100%;
+        width: 80%;
     }
 
     .game-area {
+        width: 80%;
         margin: 3% 0;
     }
 
@@ -144,4 +143,41 @@ footer {
         top: 200px;
     }
 
+}
+
+@media screen and (max-width: 900px) {
+
+    body {
+        padding: 0;
+    }
+
+    .content-wrapper {
+        width: 100%;
+    }
+
+    .game-area {
+        font-size: 3vmax;
+        width: 100%;
+        margin: 0;
+    }
+
+    .game-mode {
+        text-align: center;
+        font-size: 3vmax;
+    }
+
+    .element-choice {
+        text-align: center;
+        font-size: 3vmax;
+    }
+
+    #your-choice,
+    #jerry-choice {
+        font-size: 3vmax;
+    }
+
+    #game-over {
+        width: 100%;
+        top: 200px;
+    }
 }
