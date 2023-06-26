@@ -154,9 +154,12 @@ footer {
 
 @media screen and (max-width: 768px) {
 
-    body {
-        padding: 0;
+    *{
+    margin: 0;
+    padding: 0;
+    border: none;
     }
+
 
     .game-area {
         font-size: 3vmax;
