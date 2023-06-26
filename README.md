@@ -8,7 +8,7 @@ It's targetted towards anybody with an interest in pokémon, both children and a
 
 The Miniature Battle Monsters site is live and is currently hosted [HERE!](https://marc-hanson.github.io/portfolio-two/)
 
-## Tabel of Content
+## Table of Content
 
 - [Miniature Battle Monsters](#miniature-battle-monsters)
   - [Tabel of Content](#tabel-of-content)
@@ -42,51 +42,56 @@ The Miniature Battle Monsters site is live and is currently hosted [HERE!](https
 
 ## UX
 
-### Site Purpose:
+### Site Purpose
 
 To provide a fun learning tool about the strengths and weaknesses of pokémon elements.
 
-### Site Goal:
+### Site Goal
 
 To attract new parents and students to the school, to provide it's current location and activities, and provide the latest news to current parents and students.
 
-### Audience:
+### Audience
 
 Adults and children of all ages.
 
-### Communication:
+### Communication
 
 Information is easily accessible and follows a simplistic design. The design is child friendly, pages are chained together and once the game is over the page is refreshed to start again.
 
-### Current User Goals:
+### Current User Goals
 
 - WORK IN PROGRESS ADD USER GOALS.
 
-### New User Goals:
+### New User Goals
 
 - WORK IN PROGRESS ADD USER GOALS.
 
 ## Design
 
-### Colour Scheme:
+### Wireframe
+
+After hand drawing rough designs, the pages design was wireframed on 'draw.io' before being replicated through HTML and CSS.
+[Wireframe](/assets/images/wireframe.jpg)
+
+### Colour Scheme
 
 The color palette was chosen to be fun, bright and exciting without overloading the senses or straining the eyes.
 
 ![Color Palette](/assets/images/colorhunt.jpg)
 
-### Typography:
+### Typography
 
 Roboto was chosen to be easily read and widely available. A simple clean aesthetic without overloading the user with text makes the game playable without a need for reading skills or english proficiency.
 
-### Imagery:
+### Imagery
 
-All images used on the site are emojis stored locally on the users device.
+All images used on the site are emojis stored locally on the users device. No image tags were used in this project.
 
 ## Features
 
-### Landing Page:
+### Landing Page
 
-A game selection of easy or hard mode. Using 3 or 5 elements.
+A game selection between an 'easy' or 'hard' mode. Using either 3 or 5 elements.
 
 ![Page Content](/assets/images/game-mode.jpg)
 
@@ -102,7 +107,7 @@ A winner is declared after the score reaches 5.
 
 ![About us](/assets/images/game-over.jpg)
 
-### Future Features:
+### Future Features
 
 - An extra game mode with 7 elements.
 - More elements added and 3/5/7 chosen at random (total of 19 available.)
@@ -114,12 +119,13 @@ A winner is declared after the score reaches 5.
 - Website tested in Chrome, Firefox and Microsoft Edge.
 - Website was tested across a range of devices including laptops, tablets and mobiles.
 
- ### Testing During Development
- - After HTML and CSS framework was in place the computers turn function was created and tested to make sure the computer selected one of the five choices.
- - After this the results function was created and the players choice was set to rock to check the logic worked.
- - The players choice function was then introduced and run repeatedly to check for any errors. This produced problems with a player clicking multiple times when selecting their choice and producing unclear outputs for the user. This was fixed by removing event listeners on the buttons after a choice is made and adding them again once the round was over.
- 
- ### Validator Testing
+### Testing During Development
+
+- After HTML and CSS framework was in place the computers turn function was created and tested to make sure the computer selected one of the five choices.
+- After this the results function was created and the players choice was set to rock to check the logic worked.
+- The players choice function was then introduced and run repeatedly to check for any errors. This produced problems with a player clicking multiple times when selecting their choice and producing unclear outputs for the user. This was fixed by removing event listeners on the buttons after a choice is made and adding them again once the round was over.
+
+### Validator Testing
 
 - HTML
   - HTML pages passed validation on W3C. <br>
@@ -129,7 +135,10 @@ A winner is declared after the score reaches 5.
     ![style.css validation](/assets/images/CSS.jpg)
 - LIGHTHOUSE
   - Prefect scores across Lighthouse
-  - ![Lighthouse score](/assets/images/lighthouse.jpg).
+  - ![Lighthouse score](/assets/images/lighthouse.jpg)
+    -JSHINT
+  - All Javascript passed through JSHint, unused functions are used through HTML onclick. _ES8 FEEDBACK_
+  - ![JSHint vlidation](assets/images/javascript.jpg)
 
 ### Unfixed Bugs
 
