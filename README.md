@@ -58,14 +58,6 @@ Adults and children of all ages.
 
 Information is easily accessible and follows a simplistic design. The design is child friendly, pages are chained together and once the game is over the page is refreshed to start again.
 
-### Current User Goals
-
-- WORK IN PROGRESS ADD USER GOALS.
-
-### New User Goals
-
-- WORK IN PROGRESS ADD USER GOALS.
-
 ## Design
 
 ### Wireframe
