@@ -114,7 +114,12 @@ A winner is declared after the score reaches 5.
 - Website tested in Chrome, Firefox and Microsoft Edge.
 - Website was tested across a range of devices including laptops, tablets and mobiles.
 
-  ### Validator Testing
+ ### Testing During Development
+ - After HTML and CSS framework was in place the computers turn function was created and tested to make sure the computer selected one of the five choices.
+ - After this the results function was created and the players choice was set to rock to check the logic worked.
+ - The players choice function was then introduced and run repeatedly to check for any errors. This produced problems with a player clicking multiple times when selecting their choice and producing unclear outputs for the user. This was fixed by removing event listeners on the buttons after a choice is made and adding them again once the round was over.
+ 
+ ### Validator Testing
 
 - HTML
   - HTML pages passed validation on W3C. <br>
