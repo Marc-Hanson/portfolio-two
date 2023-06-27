@@ -84,24 +84,20 @@ All images used on the site are emojis stored locally on the users device. No im
 ### Landing Page
 
 A game selection between an 'easy' or 'hard' mode. Using either 3 or 5 elements.
-
 ![Page Content](/assets/images/game-mode.jpg)
-
+<br>
 
 Your choice and computer choice as well as current score are displayed and updated throughout the game.
-
 ![About us](/assets/images/game.jpg)
-
+<br>
 
 Instructions for your current game mode are given at the bottom of the window.
-
 ![About us](/assets/images/instructions.jpg)
-
+<br>
 
 A winner is declared after the score reaches 5.
-
 ![About us](/assets/images/game-over.jpg)
-
+<br>
 
 ### Future Features
 
@@ -126,20 +122,20 @@ A winner is declared after the score reaches 5.
 
 - HTML
   - HTML pages passed validation on W3C. <br>
-  ![index.html validation](/assets/images/html.jpg)
+    ![index.html validation](/assets/images/html.jpg)
 - CSS
   - CSS page passed validation on W3C. <br>
-  ![style.css validation](/assets/images/css.jpg)
+    ![style.css validation](/assets/images/css.jpg)
 - LIGHTHOUSE
-  - Prefect scores across Lighthouse
-  ![Lighthouse score](/assets/images/lighthouse.jpg)
--JSHINT
-  - All Javascript passed through JSHint, unused functions are ran through the HTML onclick property. ES8 warnings are due to async functions being used in most of the games functions. 
-  ![JSHint vlidation](assets/images/javascript.jpg)
+  - Prefect scores across Lighthouse. <br>
+    ![Lighthouse score](/assets/images/lighthouse.jpg)
+- JSHINT
+  - All Javascript passed through JSHint, unused functions are ran through the HTML onclick property. ES8 warnings are due to async functions being used in most of the games functions. <br>
+    ![JSHint vlidation](assets/images/javascript.jpg)
 
 ### Unfixed Bugs
 
-- Async functions are a feature of ES8 and give and give a warning through JSHint.
+- Async functions are a feature of ES8 and give and give a warning through JSHint, not possible to use ES8 settings on JSHint at the moment so this problem is persistent.
 
 ## Technologies Used
 
@@ -192,7 +188,7 @@ The game being triggered through the users selection meant after the initial cli
 ## Media
 
 All emojis were sourced from https://emojipedia.org/ but are loaded locally depending on the current device.<br>
-[Favicon] - (https://icon-icons.com/icon/sword-cross/135139)<br>
-[Colorhunt] - (https://colorhunt.co/palette/3c486bf0f0f0f9d949f45050)<br>
+[Favicon](https://icon-icons.com/icon/sword-cross/135139)<br>
+[Colorhunt](https://colorhunt.co/palette/3c486bf0f0f0f9d949f45050)<br>
 
 [Back to top](#Miniature-Battle-Monsters)
