@@ -4,7 +4,7 @@ const options = ["fire", "grass", "rock", "ice", "ground"];
 // Game modes.
 function threeElements() {
     document.getElementById('game-start').style.display = 'none';
-    document.getElementById('content-wrapper').style.display = 'block';
+    document.getElementById('content-wrapper').style.display = 'inline';
     document.getElementById('fire').style.display = 'none';
     document.getElementById('ground').style.display = 'none';
     options.splice(4, 4);
@@ -16,7 +16,7 @@ function threeElements() {
 
 function fiveElements() {
     document.getElementById('game-start').style.display = 'none';
-    document.getElementById('content-wrapper').style.display = 'block';
+    document.getElementById('content-wrapper').style.display = 'inline';
     addListeners();
 }
 
@@ -79,7 +79,7 @@ async function youWin() {
     if (document.getElementById('your-score').textContent == 4) {
         removeListeners();
         document.getElementById('theWinner').innerHTML = 'You win';
-        document.getElementById('game-over').style.display = 'block';
+        document.getElementById('game-over').style.display = 'inline';
     } else {
         document.getElementById('your-score').innerHTML++;
         addListeners();
@@ -94,7 +94,7 @@ async function youLose() {
     if (document.getElementById('jerry-score').textContent == 4) {
         removeListeners();
         document.getElementById('theWinner').innerHTML = 'Jerry wins';
-        document.getElementById('game-over').style.display = 'block';
+        document.getElementById('game-over').style.display = 'inline';
     } else {
         document.getElementById('jerry-score').innerHTML++;
         addListeners();

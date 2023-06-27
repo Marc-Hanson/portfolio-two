@@ -16,12 +16,12 @@ body {
 #content-wrapper {
     display: none;
     margin: 0 auto;
-    width: 60%;
 }
 
 /* Header area*/
-h1 {
-    font-size: 2.5vmax;
+header {
+    font-size: 1.5vmax;
+    margin-top: 2%;
 }
 
 /* Start screen */
@@ -48,21 +48,18 @@ h1 {
 
 .game-area {
     border: 15px solid #1CC5DC;
-    margin: 3%;
     font-size: 2vmax;
+    margin: 2% 20%;
 }
 
-.button-container {
-    margin: 2% 0;
-}
 
 .element-choice {
     width: 8vmax;
     height: 8vmax;
     border-radius: 10%;
     border: 5px solid #CF0000;
-    margin: 1%;
     font-size: 5vmax;
+    margin: 3% 1%;
 }
 
 #game-over {
@@ -82,7 +79,6 @@ h1 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
-    padding: 3%;
 }
 
 .your-area {
@@ -108,23 +104,14 @@ h1 {
 
 /* Footer styling */
 footer {
-    font-size: 1.5vmax;
+    font-size: 2vmax;
 }
 
 /* Media breakpoints and styling */
 
 /* Tablets - medium size */
 
-@media screen and (max-width: 1024px) {
-
-    .content-wrapper {
-        width: 100%;
-    }
-
-    .game-area {
-        width: 100%;
-        margin: 3% 0;
-    }
+@media screen and (max-width: 768px) {
 
     .game-mode {
         font-size: 4vmax;
@@ -152,17 +139,15 @@ footer {
 
 /* Mobiles and small devices */
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 480px) {
 
-    *{
-    margin: 0;
-    padding: 0;
-    border: none;
+    header {
+        margin: 10%;
     }
-
 
     .game-area {
         font-size: 3vmax;
+        margin: 0 10%;
     }
 
     .game-mode {
@@ -185,5 +170,9 @@ footer {
     #game-over {
         width: 100%;
         top: 200px;
+    }
+
+    footer {
+        margin: 10%;
     }
 }
