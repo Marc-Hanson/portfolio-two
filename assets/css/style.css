@@ -19,12 +19,14 @@ body {
 }
 
 /* Header area*/
+
 header {
     font-size: 1.5vmax;
     margin-top: 2%;
 }
 
 /* Start screen */
+
 #game-start {
     margin: 0;
     position: absolute;
@@ -51,7 +53,6 @@ header {
     font-size: 2vmax;
     margin: 2% 20%;
 }
-
 
 .element-choice {
     width: 8vmax;
@@ -113,23 +114,6 @@ footer {
 
 @media screen and (max-width: 768px) {
 
-    .game-mode {
-        font-size: 4vmax;
-    }
-
-    .element-choice {
-        width: 7vmax;
-        height: 7vmax;
-        font-size: 4vmax;
-    }
-
-    #your-choice,
-    #jerry-choice {
-        width: 7vmax;
-        height: 7vmax;
-        font-size: 4vmax;
-    }
-
     #game-over {
         width: 100%;
         top: 200px;
@@ -146,33 +130,11 @@ footer {
     }
 
     .game-area {
-        font-size: 3vmax;
         margin: 0 10%;
-    }
-
-    .game-mode {
-        font-size: 3vmax;
-    }
-
-    .element-choice {
-        width: 6vmax;
-        height: 6vmax;
-        font-size: 3vmax;
-    }
-
-    #your-choice,
-    #jerry-choice {
-        width: 6vmax;
-        height: 6vmax;
-        font-size: 3vmax;
-    }
-
-    #game-over {
-        width: 100%;
-        top: 200px;
     }
 
     footer {
         margin: 10%;
     }
+
 }
