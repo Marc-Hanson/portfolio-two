@@ -1,33 +1,33 @@
 # Miniature Battle Monsters
 
-My 4 year old son is pokémon obsessed, so I changed a 'paper, scissors, rock, lizard, spock' game slightly and used the elements used by pokémon. Emjois were used in place of the pokémons images to avoid copyright issues but still keep the game fun and accessible for kids of any age. The miniature battle monster website is now fully functioning across all devices.
+My 4 year old son is Pokémon obsessed, so I changed a 'paper, scissors, rock, lizard, spock' game slightly and swapped the variables with the elements used by Pokémon. Emojis were used in place of the Pokémons' images to avoid copyright issues but still keep the game fun and accessible for kids of any age. The miniature battle monster website is now fully functional across all devices.
 
-It's targetted towards anybody with an interest in pokémon, both children and adults alike. The intent is educate the player about the strengths and weaknesses of the five given elements; fire, grass, ice, rock and ground. Can you beat trainer Jerry?
+The game is targeted at anybody with an interest in Pokémon, both children and adults alike. The intent is to educate the player about the strengths and weaknesses of the five given elements: fire, grass, ice, rock and ground. Can you beat trainer Jerry?
 
 ![Site view across devices](/assets/images/responsive.jpg)
 
 The Miniature Battle Monsters site is live and is currently hosted [HERE!](https://marc-hanson.github.io/portfolio-two/)
 
-## Table of Content
+## Table of Contents
 
 - [Miniature Battle Monsters](#miniature-battle-monsters)
-  - [Tabel of Content](#tabel-of-content)
+  - [Table of Contents](#table-of-contents)
   - [UX](#ux)
-    - [Site Purpose:](#site-purpose)
-    - [Site Goal:](#site-goal)
-    - [Audience:](#audience)
-    - [Communication:](#communication)
-    - [Current User Goals:](#current-user-goals)
-    - [New User Goals:](#new-user-goals)
+    - [Site Purpose](#site-purpose)
+    - [Site Goal](#site-goal)
+    - [Audience](#audience)
+    - [Communication](#communication)
   - [Design](#design)
-    - [Colour Scheme:](#colour-scheme)
-    - [Typography:](#typography)
-    - [Imagery:](#imagery)
+    - [Wireframe](#wireframe)
+    - [Color Scheme](#color-scheme)
+    - [Typography](#typography)
+    - [Imagery](#imagery)
   - [Features](#features)
     - [Existing Features](#existing-features)
-      - [Landing Page:](#landing-page)
-    - [Future Features:](#future-features)
+      - [Landing Page](#landing-page)
+    - [Future Features](#future-features)
   - [Testing](#testing)
+    - [Testing During Development](#testing-during-development)
     - [Validator Testing](#validator-testing)
     - [Unfixed Bugs](#unfixed-bugs)
   - [Technologies Used](#technologies-used)
@@ -44,11 +44,11 @@ The Miniature Battle Monsters site is live and is currently hosted [HERE!](https
 
 ### Site Purpose
 
-To provide a fun learning tool about the strengths and weaknesses of pokémon elements.
+To provide a fun learning tool about the strengths and weaknesses of Pokémon elements.
 
 ### Site Goal
 
-To provide a fun game for the user to enjoy. It teaches the pokémon elements strengths and weaknesses which a user can use etween any game in the series.
+To provide a fun game for the user to enjoy. It teaches the Pokémon elements strengths and weaknesses, which a user can use between any game in the series.
 
 ### Audience
 
@@ -56,16 +56,16 @@ Adults and children of all ages.
 
 ### Communication
 
-Information is easily accessible and follows a simplistic design. The design is child friendly, pages are chained together and once the game is over the page is refreshed to start again. There are no links to other pages or anything to take you away from the game.
+Information is easily accessible and follows a simplistic design. The design is child friendly and pages are chained together, once the game is over the page is refreshed to start again. There are no links to other pages or anything to take you away from the game.
 
 ## Design
 
 ### Wireframe
 
-After hand drawing rough designs, the pages design was wireframed on 'draw.io' before being replicated through HTML and CSS. The aim as the keep the same design/layout across all devices.
+After hand drawing rough designs, the page design was wireframed on 'draw.io' before being replicated through HTML and CSS. The aim as the keep the same design/layout across all devices.
 ![Wireframe](/assets/images/wireframe.jpg)
 
-### Colour Scheme
+### Color Scheme
 
 The color palette was chosen to be fun, bright and exciting without overloading the senses or straining the eyes.
 
@@ -73,7 +73,7 @@ The color palette was chosen to be fun, bright and exciting without overloading 
 
 ### Typography
 
-'Roboto' was chosen to be easily read and widely available. A simple clean aesthetic without overloading the user with text makes the game playable without a need for reading skills or english proficiency.
+'Roboto' was chosen to be easily read and widely available. A simple clean aesthetic without overloading the user with text makes the game playable without a need for reading skills or English proficiency.
 
 ### Imagery
 
@@ -85,25 +85,21 @@ All images used on the site are emojis stored locally on the users device. No im
 
 A game selection between an 'easy' or 'hard' mode. Using either 3 or 5 elements.
 ![Page Content](/assets/images/game-mode.jpg)
-<br>
 
-Your choice and computer choice as well as current score are displayed and updated throughout the game.
+Your choice and the computers choice, and the current scores are displayed and updated throughout the game.
 ![About us](/assets/images/game.jpg)
-<br>
 
 Instructions for your current game mode are given at the bottom of the window.
 ![About us](/assets/images/instructions.jpg)
-<br>
 
 A winner is declared after the score reaches 5.
 ![About us](/assets/images/game-over.jpg)
-<br>
 
 ### Future Features
 
 - A highscore table allowing users to compete wtih each other.
 - Jerry's victim counter to count games lost in total.
-- More elements added to the array and 3 or 5 chosen at random (total of 19 available.)
+- Add more elements to the array and allow 3 or 5 to be chosen at random (total of 19 elements are available.)
 
 ## Testing
 
@@ -182,7 +178,7 @@ Github Repository or project - https://marc-hanson.github.io/portfolio-two/
 
 ## Credits
 
-The game being triggered through the users selection meant after the initial click, the game would select the computers choice and quickly cover it with the win/lose emojis and increment the score. The way the game progressed so quickly meant the user was missing most of the game as things were happening too fast. There are a few ways to ann a small wait timer in earlier ES versions but the cleanest way I found was using "ASYNC functions". This allowed me to add a delay half second during the game, this makes the game feel smoother and gives a sense of a real opponent.<br>
+The game being triggered through the users selection meant after the initial click, the game would select the computers choice and quickly cover it with the win/lose emojis and increment the score. The way the game progressed so quickly meant the user was missing most of the game as things were happening too fast. There are a few ways to add a small wait timer in earlier ES versions but the cleanest way I found was using "ASYNC functions". This allowed me to add a delay of half a econd during the game, this makes the game feel smoother and gives a sense of a real opponent.<br>
 [Using Async Functions](https://masteringjs.io/tutorials/fundamentals/wait-1-second-then)<br>
 
 ## Media
