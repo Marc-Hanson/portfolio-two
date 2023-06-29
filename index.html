@@ -13,6 +13,7 @@
 </head>
 
 <body>
+    <!-- Game start landing page to choose the game difficulty -->
     <div id="game-start">
         <h1>Welcome to Mini Battle Monsters!</h1>
         <h2>Choose how many elements to play with:</h2>
@@ -24,8 +25,7 @@
         <header>
             <h1>'Legally-safe' Miniature Battle Monsters</h1>
         </header>
-        <!-- Cover div to allow easy or hard mode game. -->
-        <!-- Div with a blue border for game area. -->
+        <!-- Div with a blue border to highlight the game area. -->
         <div class="game-area">
             <!-- 5 buttons with emoji images. -->
             <div class="button-container">
@@ -35,7 +35,7 @@
                 <button class="element-choice" id="ice">❄️</button>
                 <button class="element-choice" id="ground">🍄</button>
             </div>
-            <!-- Game over screen with display:none; -->
+            <!-- Game over screen with display:none; shown after score reaches 5. -->
             <div id="game-over">
                 <h2><span id="theWinner">#</span> with 5 points!</h2>
                 <h3>Hit refresh to play again.</h3>

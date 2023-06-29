@@ -1,7 +1,7 @@
 // Array for element names.
 const options = ["fire", "grass", "rock", "ice", "ground"];
 
-// Game modes.
+// Select game mode. Removes HTML for 2 elements, also removes them from array.
 function threeElements() {
     document.getElementById('game-start').style.display = 'none';
     document.getElementById('content-wrapper').style.display = 'inline';
@@ -20,7 +20,7 @@ function fiveElements() {
     addListeners();
 }
 
-//Updates player choice and runs computers turn.
+// Inserts player choice and runs computers turn.
 async function yourTurn() {
     removeListeners();
     let yourChoice = this.getAttribute("id");
@@ -30,7 +30,7 @@ async function yourTurn() {
     jerryTurn();
 }
 
-//Updates computer choice from options array and random number, Runs the result checking.
+// Updates computer choice from options array and random number, Runs the result checking.
 async function jerryTurn() {
     let jerryChoice = options[Math.floor(Math.random() * options.length)];
     let jerryElement = document.getElementById(jerryChoice).textContent;
@@ -39,7 +39,7 @@ async function jerryTurn() {
     resultsCheck();
 }
 
-//Compares your choice to the computer choice and runs appropriate function.
+// Compares your choice to the computer choice and runs appropriate function.
 async function resultsCheck() {
     let yourMove = document.getElementById('your-choice').textContent;
     let jerryMove = document.getElementById('jerry-choice').textContent;
@@ -63,7 +63,7 @@ async function resultsCheck() {
     }
 }
 
-//Displays win/lose/draw emojis and increments scores.
+// Displays win/lose/draw emojis and increments scores.
 async function aDraw() {
     await new Promise(resolve => setTimeout(resolve, 400));
     document.getElementById('your-choice').innerHTML = "✊";
@@ -102,7 +102,7 @@ async function youLose() {
     await new Promise(resolve => setTimeout(resolve, 400));
 }
 
-//Sets cooldown on buttons to stop user clicking too often.
+// Used to set cooldown on buttons to stop user clicking too often.
 function removeListeners() {
     let buttons = document.getElementsByClassName("element-choice");
 

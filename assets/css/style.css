@@ -37,6 +37,11 @@ header {
     background-color: #F5F7B2;
 }
 
+#game-start h1,
+h2 {
+    padding: 5%;
+}
+
 .game-mode {
     width: 8vmax;
     height: 8vmax;
@@ -104,9 +109,11 @@ header {
 }
 
 /* Footer styling */
+
 footer {
     font-size: 2vmax;
 }
+
 
 /* Media breakpoints and styling */
 
@@ -117,6 +124,10 @@ footer {
     #game-over {
         width: 100%;
         top: 200px;
+    }
+
+    .element-choice {
+        margin: 3%;
     }
 
 }
